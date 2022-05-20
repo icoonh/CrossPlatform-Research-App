@@ -1,0 +1,986 @@
+/*.miativity_gallery_container {
+  text-align: center;
+}
+.miativity_gallery_container img {
+  margin: 0em 2em 0em 2em;
+  border: 1px solid black;
+}
+.views-rows {
+  text-align: center;
+}*/
+
+/*Global*/
+
+ #_drupalgap_splash .ui-content {
+   position: absolute; top: 0px; right: 0; bottom: 0; left: 0;
+ }
+ #_drupalgap_splash_content_wit {
+   width: 100%; height: 100%; position: relative;
+ }
+ #_drupalgap_splash_content_wit img {
+   position: absolute; top: 0; left: 0 ; margin-left: 0; margin-top: 0; width: 100%; max-height: 500%;
+ }
+
+
+body, input, select, textarea, button, .ui-btn {
+font-size: 1em;
+line-height: 1.3;
+font-family: 'Roboto' !important; 
+}
+
+.ui-content{padding: 0;}
+h2 {margin: 0;}
+
+.nodetitlewit{display: none;}
+
+/*Intro*/
+
+#drupalgap_page_title_introduction{ /*fikirsensin logo*/
+	padding: 0 0 .7em 0;
+    margin: 0 20%;
+}
+
+.ui-header .ui-title{ /* Sayfa basliklari - logo yerlesimi */
+	padding: 0 0 .7em 0;
+    margin: 0 20%;
+}
+
+#introduction .introtext{
+display: block;
+/*width: 80%;*/
+margin: auto;
+text-align: center;
+}
+
+#introduction .introp{
+background-color: #5eb2a3;
+color: #ffffff;
+text-shadow: none;
+}
+
+#introduction .introp em{text-transform: capitalize;}
+
+#introduction p{padding: 0 20px;}
+
+#introduction p.introp {margin: 0; padding:0; }
+#introduction p.introp strong {padding:15px 0; display: inline-block; }
+
+#introduction p.introp img{max-height: 30px;}
+
+.roleswitchblok {width: 94%; font-size: 0.6em;}
+
+.ui-mobile .roleswitchblok label{font-size: 12px;}
+
+#introduction .ui-controlgroup{
+    padding: 0 20px;
+    margin: .5em 0;
+}
+
+#introduction .introtext fieldset.roleswitchblok{
+    padding: 0;
+    margin: .5em 0;
+}
+
+/*comments*/
+
+.comments>h2{display:none;}
+
+.yorumlist {padding: 5px !important; background-color: #ffffff;}
+.yorumlist .comment_body {padding: 10px;}
+
+/*comment (ve diğer paragraf içeren containerlar) - jquery override*/
+
+.ui-listview>li .comment_body {
+    font-size: .75em;
+    font-weight: 400;
+    margin: .6em 0;
+    text-overflow: inherit;
+    overflow: hidden;
+    white-space: normal;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.ui-listview>li .comment_body p {
+    font-size: 1em;
+    font-weight: 400;
+    margin: .6em 0;
+    text-overflow: inherit;
+    overflow: hidden;
+    white-space: normal;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+/*comment - profil butonu*/
+.yorumlist>.ui-btn { 
+    padding: .3em .7em;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.comment>.ui-listview>li>a.ui-btn {
+	margin: 0;
+    display: flex;
+    position: relative;
+    text-align: left;
+    text-overflow: initial;
+    overflow: hidden;
+    white-space: normal !important;
+    max-width: 70px;
+    min-width: 70px;
+}
+
+.comment>.ui-listview>li>a.ui-btn>p{
+	font-size: 0.75em;
+    text-align: center;
+    width: 100%;
+}
+
+/* Mobile Notifications */ 
+
+#mobile_notifications_list_view{
+background-color: #ef7a24;
+}
+
+/* Header */
+
+.region_header h1 img{
+/*max-height: 30px;*/
+}
+
+/*dalislar popup*/
+
+#gorevtextpop{
+position: fixed;
+display: block;
+width: 80%;
+top: 200px;
+left: 10%;
+}
+
+/*node_edit*/
+
+.field-name-field-ekip, .field-name-field-kategori{
+display:none;
+}
+
+/*Butonlar - Gorevler - Ilhamlar - vb listeler*/
+
+.girisbuton a{display: block; line-height: 0; width: 80%; margin: 10px auto; text-align: center;}
+
+.anabuton a{display: block; line-height: 0;}
+
+div.view{list-style: none;}
+
+.banner{display: block; position: relative;line-height:0;}
+
+div[role="main"] .banner > img{width: 100% !important;}
+
+div.view a{display: block; line-height: 0;}
+
+.bannerbaslik{display: block;
+position: absolute;
+top: 1em;
+left: 0.1em;
+margin: 0;
+color: white;
+font-weight: normal;
+text-shadow: 1px 1px 4px #000000;
+text-decoration: none;
+font-style: none;
+font-family: 'Roboto Light';
+/*line-height: normal;*/
+font-size: 1em;
+}
+
+#ilhamlar_listing .bannerbaslik{
+line-height: normal;
+padding: 4px;
+background-color: rgba(65, 134, 193, 0.8);
+}
+
+#ilhamlar_listing .banner, #gorevler_listing .banner, #gorevler_listing_atananlar .banner{
+border-top: 2px solid #ffffff;
+}
+
+.gorevlerbitti{
+	width: 90%;
+    margin: auto;
+    display: block;
+    padding: 5%;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.ilham_like{
+position: absolute;
+color: #ffffff;
+bottom: 20px;
+right: 20px;
+}
+
+h3.puan{display: block;
+position: absolute;
+bottom: 1em;
+left: 0.1em;
+margin: 0;
+color: white;
+font-weight: normal;
+text-shadow: 1px 1px 4px #000000;
+text-decoration: none;
+font-style: none;
+font-size: 1em;
+}
+
+.challengebanner{
+display: block;
+position: absolute;
+top: 1.8em;
+left: 1em;
+color: white;
+font-weight: normal;
+text-shadow: 1px 1px 4px #000000;
+text-decoration: none;
+font-style: none;
+}
+
+/**** Eklenen icerik govde ****/
+
+.eklenengovde{
+  padding: 5px;
+  border: 1px solid #d3d3d3;
+  background-color: #ffffff;
+}
+
+.eklenengovde .body{
+padding: 15px;
+}
+
+/**** FOOTER NAVBAR ****/
+
+.region_footer {display:none;}
+
+.ui-page .ui-footer-fixed.ui-fixed-hidden {display: none;}
+
+/*.region_footer > h2.ui-title{ margin: 0; font-size: 1px !important;}
+
+#footernav{
+background-color: rgb(51, 51, 51);
+border-color: rgb(51, 51, 51);
+display: none;
+}
+
+.ui-footer-fixed{
+padding: 0;
+bottom: 0;
+}*/
+
+/**** GOREV NAVBAR ****/
+
+#hwrapper, #hwrapper1, #hwrapper2, #hwrapper3, #hwrapper4, #hwrapper5, #hwrapper6, #hwrapper7, #hwrapper8, #hwrapper9{
+	position: relative;
+	z-index: 1;
+	height: 54px;
+	width: 100%;
+	overflow: hidden;
+	-ms-touch-action: none;
+}
+#horinavbar{
+	   background: #298582;
+		display: block;
+		clear: both;
+		height: 54px;
+		/*top: 54px;*/
+		width: auto;
+		position: absolute;
+		z-index: 1;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		-webkit-transform: translateZ(0);
+		-moz-transform: translateZ(0);
+		-ms-transform: translateZ(0);
+		-o-transform: translateZ(0);
+		transform: translateZ(0);
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		-webkit-text-size-adjust: none;
+		-moz-text-size-adjust: none;
+		-ms-text-size-adjust: none;
+		-o-text-size-adjust: none;
+		text-size-adjust: none;
+}
+#challengebar{
+	   background: #3f9586;
+		display: table;
+		clear: both;
+		height: 35px;
+		position: relative;
+		z-index: 1;
+		width: 99%;
+		padding: 2px 2px 0;
+}
+#horinavbar td{
+	color: #ffffff;
+	margin-left: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 0.8em;
+	text-shadow: none;
+	background-color: #5eb2a3;
+}
+#challengebar .challengebutton{
+	color: #ffffff;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 0.6em;
+	text-shadow: none;
+	background-color: #5eb2a3;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width: 25%;
+	border: 1px solid #3f9586;
+	border-bottom: 0;
+}
+#horinavbar td.aktifsayfa, #challengebar .aktifsayfa{
+background-color: #ef7821;
+font-weight: bold;
+}
+
+/**** Kullanici sayfasi ****/
+
+.gorevpanel h4{
+margin: auto;
+padding: em;
+}
+
+.gorevpanel {
+width: 90%;
+margin: auto;
+padding: 0;
+}
+
+.gorevpanel li{
+list-style: none;
+}
+
+/**** KULLANNICI LISTESI ***/
+
+.userbanner{
+display: inline-block;
+position: relative;
+width: 100%;
+background: url("kapakgeneric.jpg") no-repeat top left;
+background-size: 100% 100%;
+border-top: 2px solid #ffffff;
+}
+
+.userbanner  .profilcontain{
+width:25%;
+max-width: 80px;
+padding: 2%;
+display: block;
+float: left;
+}
+
+.userbanner .bannerbaslik2{display: block;
+position: absolute;
+top: 1em;
+right: 1em;
+margin: 0;
+color: white;
+font-weight: normal;
+text-shadow: 1px 1px 4px #000000;
+text-decoration: none;
+font-style: none;
+font-family: 'Roboto Light';
+font-size: 1.2em;
+}
+
+.userbanner h3.puan2{display: block;
+position: absolute;
+bottom: 1em;
+right: 1em;
+margin: 0;
+color: white;
+font-weight: normal;
+text-shadow: 1px 1px 4px #000000;
+text-decoration: none;
+font-style: none;}
+
+.userbanner .challengebanner2{
+display: block;
+position: absolute;
+top: 1.8em;
+right: 2em;
+color: white;
+font-weight: normal;
+text-shadow: 1px 1px 4px #000000;
+text-decoration: none;
+font-style: none;
+}
+
+/**** GOREV SAYFASI ***/
+
+.mobilwit-activity-img{display: block; position: relative;line-height:0;}
+.icerik-baslik{display: block;
+position: absolute;
+bottom: 4px;
+left: 0.5em;
+margin: 0;
+color: white;
+font-weight: normal;
+text-shadow: 1px 1px 4px #000000;
+text-decoration: none;
+font-style: none;
+line-height: normal;
+width: 60%;
+font-size: 1.2em;}
+
+.gorev-puan{
+	display: block;
+	width: 80px;
+	padding: 2%;
+	position: relative;
+	text-align: center;
+	float: left;
+	min-height: 60px;
+}
+
+.gorev-puan span{
+	display: block;
+	color: #ffffff;
+	position: absolute;
+	top: 1.1em;
+	left: 1.2em;
+	text-shadow: 0px 0px 6px #000000;
+}
+
+.tamamlayan-liste{
+	display: block;
+	position: relative;
+	/*width: 67%;
+	float: right;*/
+	width: 96%;
+	padding: 2%;
+	font-size: 0.6em;
+	min-height: 60px;
+	text-align: center;
+	border-bottom: 1px solid #eee;
+
+}
+
+.bitirenler-minilist-bos{
+	top: 2.4em;
+	display: block;
+	position: absolute;
+	color: #f18231;
+	width: 100%;
+}
+.tamamlayan-liste #gorev_user_bitirenler{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+.tamamlayan-liste #gorev_user_bitirenler li{
+	display: inline-block;
+	width: 13%;
+	padding: 1% 0 1% 1%;
+	float: right;
+}
+
+.begenen-liste{
+	display: inline-block;
+	position: relative;
+	width: 96%;
+	padding: 2%;
+	font-size: 0.8em;
+	text-align: center;
+	margin-top: 6px;
+	background-color: #f6f6f6;
+}
+
+.begenen-liste #gorev_user_bitirenler{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+.begenen-liste #gorev_user_bitirenler li{
+	display: inline-block;
+	width: 13%;
+	padding: 1% 0 1% 1%;
+	/*float: right;*/
+}
+
+/*Gorev Govdesi*/
+.mobilwit-activity-body {
+width: 85%;
+/*margin: 70px auto 10px;*/
+margin: 10px auto 10px;
+padding: 2%;
+display: block;
+font-size: 0.9em;
+}
+
+.hatirlatma-markup{
+	border-bottom: 1px solid #eee;
+	border-top: 1px solid #eee;
+}
+
+#challengeinfo{
+display: inline-block;
+position: absolute;
+top: 1em;
+left: 1em;
+width: 50%;
+color: white;
+text-shadow: 1px 1px 4px #000000;
+line-height: 1em;
+margin: 0;
+}
+
+/*** Bildirim listesi ***/
+
+h4.bildirimh4{
+	margin-left: 5%;
+	color: #55aa41;
+}
+
+#bildirimlerim{
+	background-color: #ffffff;
+}
+
+#mobile_notifications{
+	background-color: #ffffff;
+}
+
+#bildirimlerim_listesi{
+	list-style: none;
+	padding: 0;
+	margin: 20px auto;
+	display: table;
+	width: 90%;
+	text-align: center;
+}
+#bildirimlerim_listesi li{
+	display: block;
+	width: 100%;
+	margin:4px 0;
+	background: url("bildirim_bg.jpg") repeat-x top left;
+	background-size: 100%;
+	border: 1px solid #ddd;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 1.2em;
+	/*padding: 0.4em;*/
+	color: #de4d00;
+}
+
+#bildirimlerim_listesi li.yenibildirim{
+	background: url("bildirim_bg_new.jpg") repeat-x top left;
+}
+
+#mobile_notifications #bildirimlerim_listesi li a{
+	color: #55aa41;
+}
+#bildirimlerim_listesi li a{
+	text-decoration: none;
+	font-weight: normal;
+	line-height: 1.2em;
+	padding: 1em;
+	}
+
+
+/*** Goreve eklenenler listesi ***/
+.eklenenler-bos-liste{
+display: block;
+width: 90%;
+margin: auto;
+text-align: center;
+color: #ffffff;
+}
+#paylasilanlar_listing .eklenenler-bos-liste{
+	color: #55aa42;
+}
+#gorev_eklenenler_listesi{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: table;
+	width: 100%;
+	border-top: 2px solid #ffffff;
+}
+#gorev_eklenenler_listesi li{
+	display: block;
+	width: 100%;
+	background: url("userlistbg.png") no-repeat top left;
+	background-size: auto 100%;
+	border-top: 1px solid #ddd;
+}
+#gorev_eklenenler_listesi li > a{
+	display: table-cell;
+	width: 17%;
+	padding: 2%;
+	vertical-align: middle;
+}
+#gorev_eklenenler_listesi li .eklenen-aktivite{
+	display: table-cell;
+	width: 75%;
+	padding: 2%;
+	text-align: center;
+	vertical-align: middle;
+}
+#gorev_eklenenler_listesi li .eklenen-aktivite a{
+	text-decoration: none;
+	text-shadow: none;
+	color: #f18231;
+	font-size: 0.8em;
+	padding: 0 4%;
+	line-height: normal;
+	/*display: inline;*/
+	width: 100%;
+	text-align: center;
+}
+#gorev_eklenenler_listesi li .eklenen-aktivite a img.onaylanma{
+width: 33% !important;
+padding: 0 3px;
+}
+
+
+/*Eklenenler govdesi*/
+
+.node .region_content{
+width: 90%;
+margin: auto;
+padding: 2%;
+}
+
+/*Profil Sayfasi*/
+
+.profilsayfasi .profilresmi {
+    display: inline-block;
+    width: 30%;
+    max-height: 180px;
+    overflow: hidden;
+    margin: 1% 2%;
+    min-height: 140px;
+    position: relative;
+	overflow: visible;
+}
+.profilsayfasi .profilresmi img{ 
+	box-shadow: 0px 0px 5px #000000; 
+	position: absolute;
+	top: -9999px;
+	bottom: -9999px;
+	left: -9999px;
+	right: -9999px;
+	margin: auto;
+}
+.profilsayfasi .kimlik{
+	display: block;
+	position: absolute;
+	padding: 2%;
+	float: right;
+	text-align: right;
+	bottom: 15px;
+	right:0;
+}
+.profilsayfasi .puantoplam{
+display: inline-block;
+width: 27%;
+padding: 2%;
+text-shadow: 1px 1px 4px #000000;
+font-size: 1.2em;
+color: #ffffff;
+position: relative;
+bottom: 5px;
+}
+.profilsayfasi .isim, .profilsayfasi .pozisyon{
+text-shadow: 1px 1px 4px #000000;
+font-size: 0.8em;
+color: #ffffff;
+}
+.profilsayfasi .editprofil{
+display: block;
+margin-top: 20px;
+}
+.profilsayfasi .gorevittir{
+    display: inline-block;
+    margin: 0;
+    padding: 1%;
+    width: 48%;
+}
+.profilsayfasi .gorevittir #gorev_ittir_buton{
+    display: block;
+    width: 90%;
+    padding: 5%;
+    background: url("gorevittir.png") no-repeat top left;
+    background-size: 100% 100%;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px #000000;
+    margin: auto;
+    text-align: center;
+}
+.profilsayfasi .kunye{
+	background-size: auto 100%;
+	/*background-repeat: no-repeat;*/
+	min-height: 80px;
+	position: relative;
+}
+.profilsayfasi .editprofil a{
+text-shadow: 1px 1px 4px #000000;
+/*font-size: 0.8em;*/
+font-size: 1em;
+color: #ffffff;
+padding: 10px;
+margin-top: 30px;
+background-color: rgba(85, 170, 66, 0.7);
+border-radius: 5px;
+}
+.profilsayfasi .bio{
+display: block;
+width: 85%;
+margin: auto;
+padding: 2%;
+}
+
+/*Form style*/
+
+#user_profile_form, #node_edit{
+width: 90%;
+margin: auto;
+padding: 2%;
+}
+
+#user_login_form{
+width: 80%;
+margin: auto;
+padding: 10%;
+}
+
+#user_profile_form .form-item img, #node_edit .form-item img{
+display: block;
+max-height: 200px;
+margin: auto;
+}
+
+.node_add/*, .node*/{
+background-color: #4186c1;
+}
+.node_add .field-name-field-g-rev-tan-t-c-resmi{ /* resim formu - gorev */
+display: none;
+}
+
+video{ width: 100%; }
+
+/*Flicker fix?*/
+.ui-page {
+    -webkit-backface-visibility: hidden;
+}
+
+/*.views-rows{width: 90%;}*/
+.mobilwit-table-activity p{font-style: italic;}
+.mobilwit-table-activity h3 {color: #2876a7;}
+
+.mobilwit-nodetitle{color: #2876a7; font-size: 16px;}
+
+.mobilwit-activity-body p{font-size: 14px;}
+
+
+/*.mobilwit-activity-img{width: 100%; display: block;}
+.mobilwit-activity-img img{width: 100%;}
+.mobilwit-image-activity-img img{width: 100%;}*/
+
+/*jquery button fix*/
+
+/*html  .region_header.ui-bar-b .ui-btn{
+background-color: #333;
+border-color: #1f1f1f;
+color: #fff;
+text-shadow: 0 1px 0 #111;
+height: 1.1em;
+}
+
+.region_header .ui-btn-icon-left {
+padding-left: 1.5em;
+padding-right: 1.5em;
+}
+
+.region_header .ui-mini.ui-btn-icon-left:after, .region_header .ui-mini .ui-btn-icon-left:after, .region_header .ui-header .ui-btn-icon-left:after, .region_header .ui-footer .ui-btn-icon-left:after {
+left: .5625em;
+}*/
+
+/* image gallery */
+
+#activities_gallery_items{list-style: none; width: 100%; display: block; float: left; left: 0; padding: 0;}
+#activities_gallery_items li {display: inline-block; margin: 0; padding: 0; /*border: 1px solid #d1d1d1;*/ float: left; width: 25%; max-width: 150px;}
+#activities_gallery_items li a{font-style: none; text-decoration: none;}
+.mobilwit-gallery-image-comment{font-size: 10px; width: 16px; height: 16px; padding: 1px; display: inline-block; position: absolute; right: 2px; top: 2px; color: #FFFFFF; background-color: #2876a7; font-style: none; text-decoration: none; text-align: center; vertical-align: middle;}
+.mobilwit-gallery-image{max-width: 200px; display: block; position: relative;}
+.mobilwit-gallery-image img {width: 100%; max-width: 150px; margin-bottom: -5px;}
+
+/****     Yukleme Bari   ****/
+
+.meter { 
+	height: 20px;  /* Can be anything */
+	position: relative;
+	background: #555;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 10px;
+	-webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+	-moz-box-shadow   : inset 0 -1px 1px rgba(255,255,255,0.3);
+	box-shadow        : inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+.meter > span {
+	display: block;
+	height: 100%;
+	   -webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	       -moz-border-radius-topright: 8px;
+	    -moz-border-radius-bottomright: 8px;
+	           border-top-right-radius: 8px;
+	        border-bottom-right-radius: 8px;
+	    -webkit-border-top-left-radius: 20px;
+	 -webkit-border-bottom-left-radius: 20px;
+	        -moz-border-radius-topleft: 20px;
+	     -moz-border-radius-bottomleft: 20px;
+	            border-top-left-radius: 20px;
+	         border-bottom-left-radius: 20px;
+	background-color: rgb(43,194,83);
+	background-image: -webkit-gradient(
+	  linear,
+	  left bottom,
+	  left top,
+	  color-stop(0, rgb(43,194,83)),
+	  color-stop(1, rgb(84,240,84))
+	 );
+	background-image: -webkit-linear-gradient(
+	  center bottom,
+	  rgb(43,194,83) 37%,
+	  rgb(84,240,84) 69%
+	 );
+	background-image: -moz-linear-gradient(
+	  center bottom,
+	  rgb(43,194,83) 37%,
+	  rgb(84,240,84) 69%
+	 );
+	background-image: -ms-linear-gradient(
+	  center bottom,
+	  rgb(43,194,83) 37%,
+	  rgb(84,240,84) 69%
+	 );
+	background-image: -o-linear-gradient(
+	  center bottom,
+	  rgb(43,194,83) 37%,
+	  rgb(84,240,84) 69%
+	 );
+	-webkit-box-shadow: 
+	  inset 0 2px 9px  rgba(255,255,255,0.3),
+	  inset 0 -2px 6px rgba(0,0,0,0.4);
+	-moz-box-shadow: 
+	  inset 0 2px 9px  rgba(255,255,255,0.3),
+	  inset 0 -2px 6px rgba(0,0,0,0.4);
+	position: relative;
+	overflow: hidden;
+}
+.orange > span {
+	background-color: #f1a165;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f1a165),color-stop(1, #f36d0a));
+	background-image: -webkit-linear-gradient(top, #f1a165, #f36d0a); 
+        background-image: -moz-linear-gradient(top, #f1a165, #f36d0a);
+        background-image: -ms-linear-gradient(top, #f1a165, #f36d0a);
+        background-image: -o-linear-gradient(top, #f1a165, #f36d0a);
+}
+
+.red > span {
+	background-color: #f0a3a3;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f0a3a3),color-stop(1, #f42323));
+	background-image: -webkit-linear-gradient(top, #f0a3a3, #f42323);
+        background-image: -moz-linear-gradient(top, #f0a3a3, #f42323);
+        background-image: -ms-linear-gradient(top, #f0a3a3, #f42323);
+        background-image: -o-linear-gradient(top, #f0a3a3, #f42323);
+}
+.meter > span:after {
+	content: "";
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background-image: 
+	   -webkit-gradient(linear, 0 0, 100% 100%, 
+	      color-stop(.25, rgba(255, 255, 255, .2)), 
+	      color-stop(.25, transparent), color-stop(.5, transparent), 
+	      color-stop(.5, rgba(255, 255, 255, .2)), 
+	      color-stop(.75, rgba(255, 255, 255, .2)), 
+	      color-stop(.75, transparent), to(transparent)
+	   );
+	background-image: 
+		-webkit-linear-gradient(
+		  -45deg, 
+	      rgba(255, 255, 255, .2) 25%, 
+	      transparent 25%, 
+	      transparent 50%, 
+	      rgba(255, 255, 255, .2) 50%, 
+	      rgba(255, 255, 255, .2) 75%, 
+	      transparent 75%, 
+	      transparent
+	   );
+	background-image: 
+		-moz-linear-gradient(
+		  -45deg, 
+	      rgba(255, 255, 255, .2) 25%, 
+	      transparent 25%, 
+	      transparent 50%, 
+	      rgba(255, 255, 255, .2) 50%, 
+	      rgba(255, 255, 255, .2) 75%, 
+	      transparent 75%, 
+	      transparent
+	   );
+	background-image: 
+		-ms-linear-gradient(
+		  -45deg, 
+	      rgba(255, 255, 255, .2) 25%, 
+	      transparent 25%, 
+	      transparent 50%, 
+	      rgba(255, 255, 255, .2) 50%, 
+	      rgba(255, 255, 255, .2) 75%, 
+	      transparent 75%, 
+	      transparent
+	   );
+	background-image: 
+		-o-linear-gradient(
+		  -45deg, 
+	      rgba(255, 255, 255, .2) 25%, 
+	      transparent 25%, 
+	      transparent 50%, 
+	      rgba(255, 255, 255, .2) 50%, 
+	      rgba(255, 255, 255, .2) 75%, 
+	      transparent 75%, 
+	      transparent
+	   );
+	z-index: 1;
+	-webkit-background-size: 50px 50px;
+	-moz-background-size:    50px 50px;
+	background-size:         50px 50px;
+	-webkit-animation: move 2s linear infinite;
+	   -webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	       -moz-border-radius-topright: 8px;
+	    -moz-border-radius-bottomright: 8px;
+	           border-top-right-radius: 8px;
+	        border-bottom-right-radius: 8px;
+	    -webkit-border-top-left-radius: 20px;
+	 -webkit-border-bottom-left-radius: 20px;
+	        -moz-border-radius-topleft: 20px;
+	     -moz-border-radius-bottomleft: 20px;
+	            border-top-left-radius: 20px;
+	         border-bottom-left-radius: 20px;
+	overflow: hidden;
+}

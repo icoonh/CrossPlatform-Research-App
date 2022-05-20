@@ -1,0 +1,43 @@
+
+
+/*** OFFLINE PAGE STYLING ***/
+
+#offline{
+    background-color: #4684bd;
+    text-align: center;
+}
+
+#offline .region_content{
+    display: block;
+    width: 90%;
+    margin: auto;
+    padding-top: 15%;ß
+}
+
+#offline .region_content h2{
+    font-family: 'Roboto Thin';
+    text-shadow: 1px 1px 4px #000000;
+    color: #fff;
+    margin-bottom: 10%;
+}
+
+#offline .region_content p{
+    background-color: #c5dff6;
+    color: green;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 0.9em;
+    box-shadow: 0px 0px 4px #444;
+    margin-top: 10%;
+}
+
+/*#offline .region_content p.footerofflinewit{
+    position: fixed;
+    bottom: 0;
+}*/
+
+#offline .region_header{
+    display:none;
+}
+
+
